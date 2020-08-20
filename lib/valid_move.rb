@@ -5,12 +5,12 @@ def position_taken?(board, index)
     return false
   elsif (board[index] === "X" || board[index] === "O")
     return true
-  end    
+  end
 end
 
 def valid_move?(board, index)
   if (index <= 8 && !(position_taken?(board, index))
     return true
-  else 
+  else
     return false
 end
